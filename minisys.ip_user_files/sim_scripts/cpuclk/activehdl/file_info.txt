@@ -1,0 +1,6 @@
+xpm_cdc.sv,systemverilog,xpm,D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../ipstatic/30ef"incdir="../../../ipstatic/30ef"
+xpm_memory.sv,systemverilog,xpm,D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../ipstatic/30ef"incdir="../../../ipstatic/30ef"
+xpm_VCOMP.vhd,vhdl,xpm,D:/Xilinx/Vivado/2023.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../ipstatic/30ef"incdir="../../../ipstatic/30ef"
+cpuclk_clk_wiz.v,verilog,xil_defaultlib,../../../../minisys.gen/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,incdir="../../../ipstatic/30ef"incdir="../../../ipstatic/30ef"
+cpuclk.v,verilog,xil_defaultlib,../../../../minisys.gen/sources_1/ip/cpuclk/cpuclk.v,incdir="../../../ipstatic/30ef"incdir="../../../ipstatic/30ef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

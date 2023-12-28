@@ -1,0 +1,49 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom

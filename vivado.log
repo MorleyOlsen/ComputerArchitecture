@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Dec 26 15:42:16 2023
+# Process ID: 19992
+# Current directory: C:/Users/86158/Desktop/minisys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21472 C:\Users\86158\Desktop\minisys\minisys.xpr
+# Log file: C:/Users/86158/Desktop/minisys/vivado.log
+# Journal file: C:/Users/86158/Desktop/minisys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86158/Desktop/minisys/minisys.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Paro/Documents/Vivado/minisys' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Downloads/assembler/output/prgmip32.coe', nor could it be found using path 'C:/Users/Paro/Downloads/assembler/output/prgmip32.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Downloads/assembler/output/dmem32.coe', nor could it be found using path 'C:/Users/Paro/Downloads/assembler/output/dmem32.coe'.
+ERROR: [Project 1-208] No val for DA Elab Attr
+Scanning sources...
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/86158/Desktop/minisys/minisys.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 26 15:42:28 2023...
+ERROR: [Common 17-70] Application Exception: SrcMgr::createSS : type not set
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 15:42:35 2023...

@@ -1,0 +1,356 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Jul  8 16:55:46 2023
+# Process ID: 106864
+# Current directory: C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1
+# Command line: vivado.exe -log minisys.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minisys.tcl
+# Log file: C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/minisys.vds
+# Journal file: C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1\vivado.jou
+# Running On: LAPTOP-2021, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+source minisys.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 445.172 ; gain = 161.543
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/utils_1/imports/synth_1/minisys.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/utils_1/imports/synth_1/minisys.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top minisys -part xc7a100tfgg484-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 99592
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1290.125 ; gain = 411.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'minisys' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cpuclk' [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/cpuclk_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/cpuclk_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Ifetc32' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'prgrom' [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'prgrom' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Ifetc32' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Idecode32' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'Idecode32' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v:4]
+INFO: [Synth 8-6157] synthesizing module 'control32' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'control32' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Executs32' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'Executs32' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v:4]
+INFO: [Synth 8-6157] synthesizing module 'dmemory32' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ram' [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dmemory32' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v:3]
+INFO: [Synth 8-6157] synthesizing module 'memorio' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'memorio' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ioread' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ioread' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v:4]
+INFO: [Synth 8-6157] synthesizing module 'leds' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'leds' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v:4]
+WARNING: [Synth 8-689] width (16) of port connection 'ledaddr' does not match port width (2) of module 'leds' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:184]
+INFO: [Synth 8-6157] synthesizing module 'switchs' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'switchs' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v:4]
+INFO: [Synth 8-6157] synthesizing module 'framebuf' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/framebuf.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vram' [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/vram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vram' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/.Xil/Vivado-106864-LAPTOP-2021/realtime/vram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'framebuf' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/framebuf.v:23]
+WARNING: [Synth 8-689] width (13) of port connection 'write_data' does not match port width (12) of module 'framebuf' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:203]
+INFO: [Synth 8-6157] synthesizing module 'bell' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/bell.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/bell.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'bell' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/bell.v:24]
+WARNING: [Synth 8-689] width (32) of port connection 'data' does not match port width (16) of module 'bell' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:218]
+INFO: [Synth 8-6155] done synthesizing module 'minisys' (0#1) [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:3]
+WARNING: [Synth 8-7129] Port write_addr[0] in module framebuf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[31] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[30] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[29] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[28] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[27] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[26] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[25] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[24] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[23] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[22] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[21] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[20] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[19] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[18] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[17] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[16] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[1] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port address[0] in module dmemory32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Function_opcode[5] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Function_opcode[4] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Exe_opcode[5] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Exe_opcode[4] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Exe_opcode[3] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Jrn in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_plus_4[1] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_plus_4[0] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Add_result[31] in module Ifetc32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Add_result[30] in module Ifetc32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Read_data_1[31] in module Ifetc32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Read_data_1[30] in module Ifetc32 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.898 ; gain = 513.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.898 ; gain = 513.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1391.898 ; gain = 513.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1391.898 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/prgrom/prgrom/prgrom_in_context.xdc] for cell 'ifetch/instmem'
+Finished Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/prgrom/prgrom/prgrom_in_context.xdc] for cell 'ifetch/instmem'
+Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'memory/ram'
+Finished Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/ram/ram/ram_in_context.xdc] for cell 'memory/ram'
+Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'cpuclk'
+Finished Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'cpuclk'
+Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/vram/vram/vram_in_context.xdc] for cell 'framebuf/fb'
+Finished Parsing XDC File [c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/vram/vram/vram_in_context.xdc] for cell 'framebuf/fb'
+Parsing XDC File [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+Finished Parsing XDC File [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/minisys_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/minisys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1487.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1487.895 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1487.895 ; gain = 608.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1487.895 ; gain = 608.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for ifetch/instmem. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for memory/ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for cpuclk. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for framebuf/fb. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1487.895 ; gain = 608.996
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'ioread_data_reg' [C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v:18]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1487.895 ; gain = 608.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   30 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 34    
+	               24 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   4 Input   32 Bit        Muxes := 1     
+	   8 Input   32 Bit        Muxes := 1     
+	   4 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	  32 Input    1 Bit        Muxes := 32    
+	   2 Input    1 Bit        Muxes := 20    
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Function_opcode[5] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Function_opcode[4] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Exe_opcode[5] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Exe_opcode[4] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Exe_opcode[3] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Jrn in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_plus_4[1] in module Executs32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PC_plus_4[0] in module Executs32 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:48 . Memory (MB): peak = 1487.895 ; gain = 608.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:52 . Memory (MB): peak = 1487.895 ; gain = 608.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:17 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:23 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |vram          |         1|
+|3     |prgrom        |         1|
+|4     |ram           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |cpuclk |     1|
+|2     |prgrom |     1|
+|3     |ram    |     1|
+|4     |vram   |     1|
+|5     |CARRY4 |    47|
+|6     |LUT1   |     6|
+|7     |LUT2   |   125|
+|8     |LUT3   |   111|
+|9     |LUT4   |   204|
+|10    |LUT5   |   320|
+|11    |LUT6   |  1161|
+|12    |MUXF7  |   256|
+|13    |MUXF8  |   108|
+|14    |FDCE   |   129|
+|15    |FDPE   |    48|
+|16    |FDRE   |  1067|
+|17    |LDC    |    16|
+|18    |IBUF   |    25|
+|19    |OBUF   |    39|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:05 ; elapsed = 00:01:25 . Memory (MB): peak = 1625.195 ; gain = 650.301
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:27 . Memory (MB): peak = 1625.195 ; gain = 746.297
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1637.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 427 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1640.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LDC => LDCE: 16 instances
+
+Synth Design complete | Checksum: 428070d9
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:33 . Memory (MB): peak = 1640.762 ; gain = 1163.621
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/synth_1/minisys.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file minisys_utilization_synth.rpt -pb minisys_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  8 16:57:29 2023...

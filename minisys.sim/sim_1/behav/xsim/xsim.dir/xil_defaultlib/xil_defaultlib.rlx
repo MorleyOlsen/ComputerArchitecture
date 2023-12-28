@@ -1,0 +1,21 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/prgrom/sim/prgrom.v,1688462578,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,,prgrom,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/ram/sim/ram.v,1688546180,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/prgrom/sim/prgrom.v,,ram,,,../../../../minisys.ip_user_files/ipstatic/30ef,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.gen/sources_1/ip/vram/sim/vram.v,1688481701,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/framebuf.v,,vram,,,../../../../minisys.ip_user_files/ipstatic/30ef,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v,1688439772,verilog,,,,minisys_sim,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sim_1/new/framebuf_sim.v,1688545592,verilog,,,,framebuf_sim,,,../../../../minisys.ip_user_files/ipstatic/30ef,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v,1688438212,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v,,control32,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v,1517213054,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v,,dmemory32,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v,1688130624,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/framebuf.v,,Executs32,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v,1688391012,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v,,Idecode32,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v,1688045414,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v,,Ifetc32,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v,1688438818,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v,,ioread,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v,1688394002,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v,,leds,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v,1517212940,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v,,memorio,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v,1688394428,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v,,minisys,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v,1688391744,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v,,switchs,,,,,,,,
+C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/framebuf.v,1688542711,verilog,,C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sim_1/new/framebuf_sim.v,,framebuf,,,../../../../minisys.ip_user_files/ipstatic/30ef,,,,,

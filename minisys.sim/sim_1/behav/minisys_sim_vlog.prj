@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/ip/cpuclk/cpuclk.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/control32.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/switchs.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/executs32.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/leds.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/idecode32.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/memorio.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/ioread.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sources_1/imports/minisys2.0/minisys.v"
+verilog xil_defaultlib  "../../../minisys.srcs/sim_1/imports/sim/minisys_sim.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

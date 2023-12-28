@@ -1,0 +1,841 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jul 04 13:12:53 2023
+# Process ID: 15696
+# Current directory: C:/Users/86158/Desktop/minisys/minisys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16392 C:\Users\86158\Desktop\minisys\minisys\minisys.xpr
+# Log file: C:/Users/86158/Desktop/minisys/minisys/vivado.log
+# Journal file: C:/Users/86158/Desktop/minisys/minisys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86158/Desktop/minisys/minisys/minisys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 814.879 ; gain = 233.617
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3037e1aacdf4404e8311c9baac2b3b16 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 2 for port ledaddr [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 04 13:47:16 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 846.395 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 846.395 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3037e1aacdf4404e8311c9baac2b3b16 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 2 for port ledaddr [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 04 16:17:12 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 861.020 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 861.020 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {C:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe' provided. It will be converted relative to IP Instance files '../../../../../../Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe'
+generate_target all [get_files  C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+export_ip_user_files -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -force -quiet
+reset_run prgrom_synth_1
+launch_run -jobs 4 prgrom_synth_1
+[Tue Jul 04 16:20:24 2023] Launched prgrom_synth_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {C:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe}] [get_ips ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe' provided. It will be converted relative to IP Instance files '../../../../../../Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe'
+generate_target all [get_files  C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ram'...
+export_ip_user_files -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -no_script -force -quiet
+reset_run ram_synth_1
+launch_run -jobs 4 ram_synth_1
+[Tue Jul 04 16:20:56 2023] Launched ram_synth_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/ram_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -directory C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3037e1aacdf4404e8311c9baac2b3b16 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 2 for port ledaddr [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 04 16:23:35 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 925.879 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 940.832 ; gain = 16.352
+run 10 us
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance minisys_sim.u.cpuclk.inst.plle2_adv_inst are not same.
+run 10 us
+run 10 us
+run 10 us
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v:1]
+[Tue Jul 04 16:25:16 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -jobs 4
+[Tue Jul 04 16:27:00 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jul 04 16:28:27 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 17 2015-18:01:07
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0001]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0001]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0001.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/minisys.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/minisys.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 978.016 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'minisys_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgrom.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/ram.mif'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/prgmip32.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/dmem32.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+"xvlog -m64 --relax -prj minisys_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:77]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_cpuclk, assumed default net type wire [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v:118]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpuclk
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module switchs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmemory32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Executs32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module leds
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Idecode32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ifetc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorio
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ioread
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sim_1/imports/sim/minisys_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module minisys_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj minisys_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/sim/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ram
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/sim/prgrom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prgrom
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 3037e1aacdf4404e8311c9baac2b3b16 --debug typical --relax --mt 2 -L blk_mem_gen_v8_3_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot minisys_sim_behav xil_defaultlib.minisys_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 16 differs from formal bit length 2 for port ledaddr [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=46,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.cpuclk_clk_wiz
+Compiling module xil_defaultlib.cpuclk
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture prgrom_arch of entity xil_defaultlib.prgrom [prgrom_default]
+Compiling module xil_defaultlib.Ifetc32
+Compiling module xil_defaultlib.Idecode32
+Compiling module xil_defaultlib.control32
+Compiling module xil_defaultlib.Executs32
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture ram_arch of entity xil_defaultlib.ram [ram_default]
+Compiling module xil_defaultlib.dmemory32
+Compiling module xil_defaultlib.memorio
+Compiling module xil_defaultlib.ioread
+Compiling module xil_defaultlib.leds
+Compiling module xil_defaultlib.switchs
+Compiling module xil_defaultlib.minisys
+Compiling module xil_defaultlib.minisys_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot minisys_sim_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav/xsim.dir/minisys_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 04 16:30:39 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 986.207 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/86158/Desktop/minisys/minisys/minisys.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "minisys_sim_behav -key {Behavioral:sim_1:Functional:minisys_sim} -tclbatch {minisys_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source minisys_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 0 ps  Iteration: 2  Process: /minisys_sim/u/memory/ram/U0/native_mem_module/mem_module/line__3418  File: C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'minisys_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 986.207 ; gain = 0.000
+run 10 us
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance minisys_sim.u.cpuclk.inst.plle2_adv_inst are not same.
+run 10 us
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/Port_#0001.Hub_#0001
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0001]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0001]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0001.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/minisys.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/minisys.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1045.875 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/minisys.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1045.875 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {C:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe}] [get_ips ram]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe' provided. It will be converted relative to IP Instance files '../../../../../../Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe'
+generate_target all [get_files  C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'ram'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ram'...
+export_ip_user_files -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -no_script -force -quiet
+reset_run ram_synth_1
+launch_run -jobs 4 ram_synth_1
+[Tue Jul 04 16:44:12 2023] Launched ram_synth_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/ram_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -directory C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Coe_File {C:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe}] [get_ips prgrom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/86158/Desktop/Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe' provided. It will be converted relative to IP Instance files '../../../../../../Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe'
+generate_target all [get_files  C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'prgrom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'prgrom'...
+export_ip_user_files -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -force -quiet
+reset_run prgrom_synth_1
+launch_run -jobs 4 prgrom_synth_1
+[Tue Jul 04 16:44:42 2023] Launched prgrom_synth_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/prgrom_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/86158/Desktop/minisys/minisys/minisys.ip_user_files/sim_scripts -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/control32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/dmemory32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/executs32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/idecode32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ifetc32.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/ioread.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/leds.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/memorio.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/minisys.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v" into library work [C:/Users/86158/Desktop/minisys/minisys/minisys.srcs/sources_1/imports/minisys2.0/switchs.v:1]
+[Tue Jul 04 16:46:53 2023] Launched synth_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Tue Jul 04 16:48:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jul 04 16:49:58 2023] Launched impl_1...
+Run output will be captured here: C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 17 2015-18:01:07
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0001]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0001]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/Port_#0001.Hub_#0001
+set_property PROGRAM.FILE {C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/minisys.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/86158/Desktop/minisys/minisys/minisys.runs/impl_1/minisys.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1045.875 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/Port_#0001.Hub_#0001
+close_hw
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+close_sim
+INFO: [Simtcl 6-16] Simulation closed

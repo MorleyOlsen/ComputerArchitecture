@@ -1,0 +1,127 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Sat Jul  8 16:58:44 2023
+| Host         : LAPTOP-2021 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file minisys_control_sets_placed.rpt
+| Design       : minisys
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    49 |
+|    Minimum number of control sets                        |    49 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    45 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    49 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    44 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              30 |           16 |
+| No           | No                    | Yes                    |              27 |            9 |
+| No           | Yes                   | No                     |              46 |           26 |
+| Yes          | No                    | No                     |              30 |            9 |
+| Yes          | No                    | Yes                    |             150 |           45 |
+| Yes          | Yes                   | No                     |             992 |          403 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+-------------------------------------+-----------------------+------------------+----------------+--------------+
+|             Clock Signal             |            Enable Signal            |    Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------+-------------------------------------+-----------------------+------------------+----------------+--------------+
+|  bell/clk__0                         | bell/beep_i_1_n_0                   | rst_IBUF              |                1 |              1 |         1.00 |
+| ~cpuclk/inst/clk_out1                |                                     |                       |                1 |              2 |         2.00 |
+| ~cpuclk/inst/clk_out1                |                                     | ifetch/PC[31]_i_1_n_0 |                2 |              4 |         2.00 |
+|  cpuclk/inst/clk_out1                | ifetch/ioread_data_reg[15]_i_4_0[1] | rst_IBUF              |                3 |              8 |         2.67 |
+|  cpuclk/inst/clk_out1                | framebuf/vpos                       | rst_IBUF              |                4 |             10 |         2.50 |
+|  bell/clk__0                         | bell/sel                            | rst_IBUF              |                4 |             16 |         4.00 |
+|  ifetch/ioread_data_reg[15]_i_6_0[0] |                                     | rst_IBUF              |                7 |             16 |         2.29 |
+|  cpuclk/inst/clk_out1                | framebuf/frame_count                | rst_IBUF              |                4 |             16 |         4.00 |
+|  cpuclk/inst/clk_out1                | ifetch/ioread_data_reg[15]_i_4_0[0] | rst_IBUF              |                6 |             16 |         2.67 |
+|  cpuclk/inst/clk_out1                | ifetch/mid[15]_i_3_0[0]             | rst_IBUF              |                5 |             16 |         3.20 |
+|  cpuclk/inst/clk_out1                | ifetch/fb_i_6_0[0]                  | rst_IBUF              |                4 |             16 |         4.00 |
+| ~cpuclk/inst/clk_out1                | ifetch/register[1][0]_i_2_0[0]      | rst_IBUF              |                4 |             16 |         4.00 |
+|  cpuclk/inst/clk_out1                | ifetch/switchrdata[15]_i_3_0[0]     | rst_IBUF              |                3 |             16 |         5.33 |
+|  cpuclk/inst/clk_out1                | framebuf/read_addr[18]_i_1_n_0      | rst_IBUF              |                7 |             19 |         2.71 |
+| ~cpuclk/inst/clk_out1                |                                     | rst_IBUF              |               17 |             26 |         1.53 |
+|  cpuclk/inst/clk_out1                |                                     | rst_IBUF              |                9 |             27 |         3.00 |
+|  cpuclk/inst/clk_out1                |                                     |                       |               15 |             28 |         1.87 |
+| ~cpuclk/inst/clk_out1                | ifetch/opcplus4[29]_i_1_n_0         |                       |                9 |             30 |         3.33 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_6_5[0]     | rst_IBUF              |               11 |             32 |         2.91 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_6_4[0]     | rst_IBUF              |                9 |             32 |         3.56 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_4_1[0]     | rst_IBUF              |                8 |             32 |         4.00 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_6_0[0]     | rst_IBUF              |               11 |             32 |         2.91 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_6_1[0]     | rst_IBUF              |               12 |             32 |         2.67 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_5_0[0]     | rst_IBUF              |               19 |             32 |         1.68 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_8_2[0]     | rst_IBUF              |               17 |             32 |         1.88 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_8_5[0]     | rst_IBUF              |               15 |             32 |         2.13 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_5_4[0]     | rst_IBUF              |               12 |             32 |         2.67 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_7_1[0]     | rst_IBUF              |               14 |             32 |         2.29 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_7_3[0]     | rst_IBUF              |               12 |             32 |         2.67 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_8_3[0]     | rst_IBUF              |               15 |             32 |         2.13 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_5_6[0]     | rst_IBUF              |               19 |             32 |         1.68 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_7_4[0]     | rst_IBUF              |               12 |             32 |         2.67 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_7_5[0]     | rst_IBUF              |               15 |             32 |         2.13 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_8_4[0]     | rst_IBUF              |                7 |             32 |         4.57 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_5_3[0]     | rst_IBUF              |               13 |             32 |         2.46 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_5_2[0]     | rst_IBUF              |               11 |             32 |         2.91 |
+|  cpuclk/inst/clk_out1                | ifetch/E[0]                         | rst_IBUF              |               11 |             32 |         2.91 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_6_6[0]     | rst_IBUF              |               16 |             32 |         2.00 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_4_2[0]     | rst_IBUF              |               11 |             32 |         2.91 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_7_6[0]     | rst_IBUF              |                9 |             32 |         3.56 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_5_5[0]     | rst_IBUF              |               11 |             32 |         2.91 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_6_3[0]     | rst_IBUF              |               11 |             32 |         2.91 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_6_2[0]     | rst_IBUF              |               10 |             32 |         3.20 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_8_0[0]     | rst_IBUF              |               14 |             32 |         2.29 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_8_1[0]     | rst_IBUF              |               14 |             32 |         2.29 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_7_0[0]     | rst_IBUF              |               19 |             32 |         1.68 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_5_1[0]     | rst_IBUF              |               22 |             32 |         1.45 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_7_2[0]     | rst_IBUF              |               12 |             32 |         2.67 |
+|  cpuclk/inst/clk_out1                | ifetch/register[1][31]_i_4_0[0]     | rst_IBUF              |               11 |             32 |         2.91 |
++--------------------------------------+-------------------------------------+-----------------------+------------------+----------------+--------------+
+
+

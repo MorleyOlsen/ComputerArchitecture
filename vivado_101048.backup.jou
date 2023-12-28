@@ -1,0 +1,328 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Jul  4 17:12:05 2023
+# Process ID: 101048
+# Current directory: C:/Users/Paro/Documents/Vivado/minisys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent108096 C:\Users\Paro\Documents\Vivado\minisys\minisys.xpr
+# Log file: C:/Users/Paro/Documents/Vivado/minisys/vivado.log
+# Journal file: C:/Users/Paro/Documents/Vivado/minisys\vivado.jou
+# Running On: LAPTOP-2021, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14877 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Paro/Documents/Vivado/minisys/minisys.xpr
+upgrade_project -migrate_output_products
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset cpuclk [get_ips  {cpuclk prgrom ram}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {cpuclk prgrom ram}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/Paro/Downloads/assembler/output/prgmip32.coe} \
+  CONFIG.Fill_Remaining_Memory_Locations {false} \
+  CONFIG.Load_Init_File {true} \
+] [get_ips prgrom]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+launch_runs prgrom_synth_1 -jobs 16
+wait_on_run prgrom_synth_1
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.Coe_File {C:/Users/Paro/Downloads/assembler/output/dmem32.coe} \
+  CONFIG.Fill_Remaining_Memory_Locations {false} \
+  CONFIG.Load_Init_File {true} \
+] [get_ips ram]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+launch_runs ram_synth_1 -jobs 16
+wait_on_run ram_synth_1
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files c:/Users/Paro/Documents/Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Paro/Downloads/assembler/output/dmem32.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Paro/Documents/Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/Paro/Downloads/assembler/output/prgmip32.coe] -no_script -reset -force -quiet
+remove_files  {c:/Users/Paro/Documents/Minisys1Av2.2»ã±àÆ÷/output/dmem32.coe c:/Users/Paro/Downloads/assembler/output/dmem32.coe c:/Users/Paro/Documents/Minisys1Av2.2»ã±àÆ÷/output/prgmip32.coe c:/Users/Paro/Downloads/assembler/output/prgmip32.coe}
+export_ip_user_files -of_objects  [get_files C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/dmem32.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe] -no_script -reset -force -quiet
+remove_files  {C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/dmem32.coe C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgmip32.coe}
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+set_property CONFIG.Coe_File {C:/Users/Paro/Downloads/assembler/output/prgmip32.coe} [get_ips prgrom]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+reset_run prgrom_synth_1
+launch_runs prgrom_synth_1 -jobs 16
+wait_on_run prgrom_synth_1
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.Coe_File {C:/Users/Paro/Downloads/assembler/output/dmem32.coe} [get_ips ram]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -no_script -sync -force -quiet
+reset_run ram_synth_1
+launch_runs ram_synth_1 -jobs 16
+wait_on_run ram_synth_1
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/ram/ram.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+file mkdir C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new
+close [ open C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/framebuf.v w ]
+add_files C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/new/framebuf.v
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name vram
+set_property -dict [list \
+  CONFIG.Enable_B {Always_Enabled} \
+  CONFIG.Fill_Remaining_Memory_Locations {true} \
+  CONFIG.Memory_Type {Simple_Dual_Port_RAM} \
+  CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
+  CONFIG.Write_Depth_A {307200} \
+  CONFIG.Write_Width_A {12} \
+] [get_ips vram]
+generate_target {instantiation_template} [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list \
+  CONFIG.Algorithm {Minimum_Area} \
+  CONFIG.Assume_Synchronous_Clk {false} \
+  CONFIG.Enable_A {Always_Enabled} \
+  CONFIG.Register_PortB_Output_of_Memory_Primitives {false} \
+] [get_ips vram]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+file mkdir C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sim_1/new/framebuf_sim.v w ]
+add_files -fileset sim_1 C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sim_1/new/framebuf_sim.v
+update_compile_order -fileset sim_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top framebuf_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source framebuf_sim.tcl
+run 10 us
+restart
+run 10 us
+run 100 us
+close_sim
+launch_simulation
+source framebuf_sim.tcl
+run 100 us
+restart
+run 100 us
+close_sim
+launch_simulation
+source framebuf_sim.tcl
+restart
+run 100 us
+close_sim
+set_property CONFIG.Assume_Synchronous_Clk {false} [get_ips vram]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.Assume_Synchronous_Clk {true} [get_ips vram]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/vram/vram.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source framebuf_sim.tcl
+restart
+run 100 us
+close_sim
+launch_simulation
+source framebuf_sim.tcl
+restart
+run 100 us
+close_sim
+launch_simulation
+source framebuf_sim.tcl
+run 100 us
+restart
+restart
+run 100 us
+close_sim
+launch_simulation
+source framebuf_sim.tcl
+restart
+run 100 us
+close_sim
+launch_simulation
+source framebuf_sim.tcl
+restart
+run 100 us
+close_sim
+launch_simulation
+source framebuf_sim.tcl
+restart
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+close_sim
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+close_design
+open_run synth_1 -name synth_1
+place_ports {pixel_out[11]} H15
+place_ports {pixel_out[10]} J15
+place_ports {pixel_out[9]} G18
+place_ports {pixel_out[8]} G17
+place_ports {pixel_out[7]} H22
+place_ports {pixel_out[6]} J22
+place_ports {pixel_out[5]} H18
+place_ports {pixel_out[4]} H17
+place_ports {pixel_out[3]} K22
+place_ports {pixel_out[2]} K21
+place_ports {pixel_out[1]} G20
+place_ports {pixel_out[0]} H20
+set_property IOSTANDARD LVCMOS33 [get_ports [list {pixel_out[11]} {pixel_out[10]} {pixel_out[9]} {pixel_out[8]} {pixel_out[7]} {pixel_out[6]} {pixel_out[5]} {pixel_out[4]} {pixel_out[3]} {pixel_out[2]} {pixel_out[1]} {pixel_out[0]}]]
+place_ports hsync M21
+place_ports vsync L21
+set_property IOSTANDARD LVCMOS33 [get_ports [list hsync]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list vsync]]
+set_property target_constrs_file C:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/constrs_1/imports/xdc/minisys.xdc [current_fileset -constrset]
+save_constraints -force
+close_design
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121 -allow_non_jtag
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+set_property CONFIG.Coe_File {C:/Users/Paro/Downloads/assembler/output/prgmip32.coe} [get_ips prgrom]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+reset_run prgrom_synth_1
+launch_runs prgrom_synth_1 -jobs 16
+wait_on_run prgrom_synth_1
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property CONFIG.Coe_File {C:/Users/Paro/Downloads/assembler/output/prgmip32.coe} [get_ips prgrom]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -no_script -sync -force -quiet
+reset_run prgrom_synth_1
+launch_runs prgrom_synth_1 -jobs 16
+wait_on_run prgrom_synth_1
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/prgrom/prgrom.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0004]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Paro/Documents/Vivado/minisys/minisys.runs/impl_1/minisys.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+set_property -dict [list \
+  CONFIG.CLKOUT1_JITTER {199.839} \
+  CONFIG.CLKOUT1_PHASE_ERROR {173.631} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25.17007} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {37} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {49} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {3} \
+] [get_ips cpuclk]
+generate_target all [get_files  c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.xci]
+export_ip_user_files -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.xci] -no_script -sync -force -quiet
+reset_run cpuclk_synth_1
+launch_runs cpuclk_synth_1 -jobs 16
+wait_on_run cpuclk_synth_1
+export_simulation -of_objects [get_files c:/Users/Paro/Documents/Vivado/minisys/minisys.srcs/sources_1/ip/cpuclk/cpuclk.xci] -directory C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files -ipstatic_source_dir C:/Users/Paro/Documents/Vivado/minisys/minisys.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/modelsim} {questa=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/questa} {riviera=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/riviera} {activehdl=C:/Users/Paro/Documents/Vivado/minisys/minisys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

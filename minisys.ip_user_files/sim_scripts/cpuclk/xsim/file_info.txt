@@ -1,0 +1,3 @@
+cpuclk_clk_wiz.v,verilog,xil_defaultlib,../../../../minisys.gen/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,incdir="$ref_dir/../../../ipstatic/30ef"incdir="../../../ipstatic/30ef"
+cpuclk.v,verilog,xil_defaultlib,../../../../minisys.gen/sources_1/ip/cpuclk/cpuclk.v,incdir="$ref_dir/../../../ipstatic/30ef"incdir="../../../ipstatic/30ef"
+glbl.v,Verilog,xil_defaultlib,glbl.v

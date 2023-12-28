@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Jul 03 22:17:46 2023
+# Process ID: 20488
+# Current directory: C:/Users/86158/Desktop/minisys/minisys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent844 C:\Users\86158\Desktop\minisys\minisys\minisys.xpr
+# Log file: C:/Users/86158/Desktop/minisys/minisys/vivado.log
+# Journal file: C:/Users/86158/Desktop/minisys/minisys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/86158/Desktop/minisys/minisys/minisys.xpr
+launch_simulation
+source minisys_sim.tcl
+run 10 s
+run 10 ps
+run 10 ps
+close_sim
+launch_simulation
+source minisys_sim.tcl
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+step
+run all
+close_sim
